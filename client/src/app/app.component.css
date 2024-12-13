@@ -1,0 +1,76 @@
+/* Header styles */
+
+
+.header {
+    display: flex;
+    justify-content: space-between;  /* Distribute space between the items */
+    align-items: center;            /* Align the items vertically centered */
+    padding: 10px 20px;             /* Add some padding */
+
+  }
+  
+  .header-title {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;                      /* Remove margin from the title */
+  }
+  
+  .header-logo {
+    width: 100px;                    /* Set width of the logo */
+    height: auto;                   /* Maintain aspect ratio */
+  }
+  
+  
+  /* Itinerary styling */
+  .itinerary {
+    padding: 10px;
+  }
+  
+  .itinerary-day {
+    margin-bottom: 20px;
+  }
+  
+  .day-header {
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    margin-bottom: 50px;
+  }
+  
+  .tour-details {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  /* Print-specific styles */
+  @media print {
+    @page {
+        size: 8.5in 11in; /* Letter size */
+        margin: 1in; /* Set default margin */
+      }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      display: none; /* Hide header and footer for the PDF */
+    }
+    .content {
+      margin: 20px;
+    }
+  }
+  

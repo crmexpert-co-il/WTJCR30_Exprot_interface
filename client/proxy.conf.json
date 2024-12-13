@@ -1,0 +1,11 @@
+{
+    "/api": {
+      "target": "https://ap-southeast-1.aws.data.mongodb-api.com",
+      "secure": true,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/api": ""
+      }
+    }
+  }
+  

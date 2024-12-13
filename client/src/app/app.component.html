@@ -1,0 +1,48 @@
+<div *ngIf="isLoading" class="loading-spinner">
+  <!-- Add your spinner or loading indicator -->
+  <p>Loading...</p>
+</div>
+
+<div *ngIf="!isLoading && tourData">
+  <div class="itinerary" #itineraryContent>
+    <div class="header">
+      <h1 class="header-title">Itinerary</h1>
+      <img class="header-logo" src="assets/logo.png" alt="Logo">
+    </div>
+    
+    <div>
+      <b><h1>{{ tourData.document.tourName }}</h1></b>
+      <h3>{{ convertUnixToDate(tourData.document.startDate) }} - {{ convertUnixToDate(tourData.document.endDate) }}</h3>
+    </div>
+    <div style="text-align: right;">
+      <h3>{{ currentDate | date:'dd/MM/yyyy' }} - CODE: CVCC11125</h3>
+    </div>
+  
+    <div *ngFor="let day of itinerary" class="itinerary-day">
+      <div class="day-header">
+        <b><p class="service-date">{{ day.date }} ({{ day.dayOfWeek }})</p></b>
+        <b><p style="font-size: 20px;">{{ day.title ? day.title : 'No Title' }} - Day {{ day.dayNumber }}</p></b>
+      </div>
+  
+      <div class="description" [innerHTML]="day.description || 'No Description'"></div>
+
+      <div *ngFor="let service of day.categoryAndService" class="tour-details">
+        <!-- Convert the service to JSON and access 'name' -->
+        <p *ngIf="convertToJson(service)?.category?.toLowerCase() === 'accommodation'">
+          <span style="color: rgb(192, 128, 10)">
+            {{ toProperCase(convertToJson(service)?.serviceCategory || convertToJson(service)?.category) }}
+          </span>
+          : {{ convertToJson(service)?.name || convertToJson(service)?.itemName }}
+        </p>
+      </div>
+      <br>
+      <p><strong>Meals:</strong> {{ day.meals }}</p>
+      <br>
+    </div>
+  
+    <!-- Button to trigger PDF export -->
+    <!-- Print Button -->
+  <!-- <button onclick="window.print()">Save as PDF</button> -->
+  </div>  
+   <button (click)="exportToPDF()">Save as PDF</button>
+</div>

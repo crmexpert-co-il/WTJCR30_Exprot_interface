@@ -1,0 +1,618 @@
+[debug] [2024-12-12T12:30:43.067Z] : 
+[debug] [2024-12-12T12:30:43.068Z] : ----------------------------------------------------------------------
+[debug] [2024-12-12T12:30:43.069Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js deploy
+[debug] [2024-12-12T12:30:43.069Z] : CLI Version:  1.17.5
+[debug] [2024-12-12T12:30:43.069Z] : Platform:     win32
+[debug] [2024-12-12T12:30:43.070Z] : Node Version: v20.12.2
+[debug] [2024-12-12T12:30:43.070Z] : Time:         Thu Dec 12 2024 20:30:43 GMT+0800 (Philippine Standard Time)
+[debug] [2024-12-12T12:30:43.070Z] : ----------------------------------------------------------------------
+[debug] [2024-12-12T12:30:43.070Z] : 
+[debug] [2024-12-12T12:30:43.644Z] : > authorizing via signed-in user option
+[debug] [2024-12-12T12:30:43.644Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL","ZohoCatalyst.appsail.Update"]
+[debug] [2024-12-12T12:30:43.655Z] : > refreshing access token <
+[debug] [2024-12-12T12:30:43.656Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-12-12T12:30:44.399Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 12 Dec 2024 12:31:12 GMT","content-type":"application/json;charset=UTF-8","content-length":"1945","connection":"keep-alive","set-cookie":["zalb_b266a5bf57=9f371135a524e2d1f51eb9f41fa26c60; Path=/; Secure; HttpOnly","iamcsr=a0dc5058-9f43-43d8-9f2f-5e870716d131;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=a0dc5058-9f43-43d8-9f2f-5e870716d131;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-12T12:30:44.409Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/3672000001499020 
+
+[debug] [2024-12-12T12:30:45.197Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 12 Dec 2024 12:31:12 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=4ead9897700827f973c0f7dbded7f673; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=5736bbb9-a345-4634-aeb1-9221ea685bb5;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=5736bbb9-a345-4634-aeb1-9221ea685bb5;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-12T12:30:45.199Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/3672000001499020/environment 
+
+[debug] [2024-12-12T12:30:45.615Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 12 Dec 2024 12:31:13 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=afc4545e-6c44-496b-b5be-b657578d6851;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=afc4545e-6c44-496b-b5be-b657578d6851;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-12T12:30:45.630Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/3672000001499020/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic"}
+
+[debug] [2024-12-12T12:30:45.858Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 12 Dec 2024 12:31:13 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=b14009a6059feb83ee8aa1c715a015c5; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=636c351e-10b0-4a06-aaf3-26fc5e84fb25;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=636c351e-10b0-4a06-aaf3-26fc5e84fb25;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-12T12:30:45.861Z] : unknown eol undefined hence skipping check
+[debug] [2024-12-12T12:30:48.581Z] : >>>> HTTP REQUEST : PUT https://api.catalyst.zoho.com/baas/v1/project/3672000001499020/server/upsert 
+
+[debug] [2024-12-12T12:31:01.144Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 12 Dec 2024 12:31:28 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=4ead9897700827f973c0f7dbded7f673; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=6dbf174e-84ff-4e1c-b894-8fd205614378;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=6dbf174e-84ff-4e1c-b894-8fd205614378;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2024-12-12T12:31:03.684Z] : ℹ Plugin : "zcatalyst-cli-plugin-angular" is used for client deploy
+[info] [2024-12-12T12:31:03.684Z] : ℹ Building Application...
+[info] [2024-12-12T12:31:14.553Z] : [Angular-plugin]: Option "deployUrl" is deprecated: Use "baseHref" option, "APP_BASE_HREF" DI token or a combination of both instead. For more information, see https://angular.io/guide/deployment#the-deploy-url.
+[info] [2024-12-12T12:31:42.258Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files           | Names         |  Raw Size | Estimated Transfer Size
+[Angular-plugin]: main.c2e6ec00278b837e.js      | main          | 900.60 kB |               214.12 kB
+[Angular-plugin]: polyfills.1b45c5e4654f87b1.js | polyfills     |  33.12 kB |                10.68 kB
+[Angular-plugin]: runtime.ed306121151239ee.js   | runtime       |   3.14 kB |                 1.46 kB
+[Angular-plugin]: styles.ef46db3751d8e999.css   | styles        |   0 bytes |                       -
+[Angular-plugin]: 
+[Angular-plugin]:                               | Initial Total | 936.86 kB |               226.26 kB
+[Angular-plugin]: 
+[Angular-plugin]: Lazy Chunk Files              | Names         |  Raw Size | Estimated Transfer Size
+[Angular-plugin]: 92.bd93c65aa62c06b5.js        | canvg         | 152.71 kB |                43.32 kB
+[Angular-plugin]: 735.2e62527603ae9095.js       | dompurify     |  21.30 kB |                 7.53 kB
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-12-12T12:31:42.252Z - Hash: d9d53fa6fa2ae2bb - Time: 20612ms
+[info] [2024-12-12T12:31:42.262Z] : [Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.index-of.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.iterator.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.reduce.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.reverse.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.promise.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.regexp.to-string.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index
+[info] [2024-12-12T12:31:42.264Z] : [Angular-plugin]: .es.js depends on 'core-js/modules/es.string.ends-with.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.includes.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.match.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.replace.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.split.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.starts-with.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.trim.js'. CommonJS or AMD dependencies can cause optimiz
+[info] [2024-12-12T12:31:42.266Z] : [Angular-plugin]: ation bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/web.dom-collections.iterator.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'raf'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'rgbcolor'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\src\app\app.component.ts depends on 'html2pdf.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: 
+[debug] [2024-12-12T12:31:42.652Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/project/3672000001499020/webapp 
+
+[debug] [2024-12-12T12:32:50.932Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 12 Dec 2024 12:33:18 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=4ac6bb17-b8af-4ac6-a3de-16f3af161bcd;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=4ac6bb17-b8af-4ac6-a3de-16f3af161bcd;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2024-12-12T12:32:50.936Z] : 
+[info] [2024-12-12T12:32:50.937Z] : ℹ functions(wtj_itinerarydocument_function): URL => https://hojokin-poc-731666484.development.catalystserverless.com/server/wtj_itinerarydocument_function/
+[info] [2024-12-12T12:32:50.937Z] : ✔ functions(wtj_itinerarydocument_function): deploy successful
+[info] [2024-12-12T12:32:50.937Z] : 
+[info] [2024-12-12T12:32:50.938Z] : ✔ client: deploy successful
+[info] [2024-12-12T12:32:50.938Z] : ℹ client: URL => https://hojokin-poc-731666484.development.catalystserverless.com/app/index.html
+[info] [2024-12-12T12:32:50.938Z] : 
+[info] [2024-12-12T12:32:50.939Z] : ✔ Catalyst deploy complete!
+[debug] [2024-12-12T12:32:50.939Z] : NO ERRORS REGISTERED
+[debug] [2024-12-12T12:32:50.939Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2024-12-12T12:32:50.939Z] : TOTAL DURATION OF COMMAND EXEC : 127306
+[debug] [2024-12-12T12:32:50.996Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2024-12-12T12:34:06.242Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Thu, 12 Dec 2024 12:34:33 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"141","connection":"keep-alive","set-cookie":["zalb_46512fd555=4ead9897700827f973c0f7dbded7f673; Path=/; Secure; HttpOnly","JSESSIONID=63842C8FD1AA7798EA10098F44099F26; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-12T12:34:06.243Z] : Response Body : {"status":"failure","data":{"error_code":"MORE_THAN_MAX_LENGTH","message":"Please check if the length of the input is in the correct range"}}
+
+[debug] [2024-12-12T12:34:06.245Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the length of the input is in the correct range
+[debug] [2024-12-12T12:38:11.902Z] : 
+[debug] [2024-12-12T12:38:11.904Z] : ----------------------------------------------------------------------
+[debug] [2024-12-12T12:38:11.904Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js deploy --only client
+[debug] [2024-12-12T12:38:11.904Z] : CLI Version:  1.17.5
+[debug] [2024-12-12T12:38:11.905Z] : Platform:     win32
+[debug] [2024-12-12T12:38:11.905Z] : Node Version: v20.12.2
+[debug] [2024-12-12T12:38:11.905Z] : Time:         Thu Dec 12 2024 20:38:11 GMT+0800 (Philippine Standard Time)
+[debug] [2024-12-12T12:38:11.905Z] : ----------------------------------------------------------------------
+[debug] [2024-12-12T12:38:11.905Z] : 
+[debug] [2024-12-12T12:38:12.493Z] : > authorizing via signed-in user option
+[debug] [2024-12-12T12:38:12.493Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL","ZohoCatalyst.appsail.Update"]
+[debug] [2024-12-12T12:38:12.505Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/3672000001499020 
+
+[debug] [2024-12-12T12:38:13.268Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 12 Dec 2024 12:38:40 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=b14009a6059feb83ee8aa1c715a015c5; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=496a995e-bb5f-48f8-aee4-c3a779d6da8c;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=496a995e-bb5f-48f8-aee4-c3a779d6da8c;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-12T12:38:13.275Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/3672000001499020/environment 
+
+[debug] [2024-12-12T12:38:13.554Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 12 Dec 2024 12:38:41 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=3b4076b9-d117-4358-b889-0355fca789f3;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=3b4076b9-d117-4358-b889-0355fca789f3;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2024-12-12T12:38:13.766Z] : ℹ Plugin : "zcatalyst-cli-plugin-angular" is used for client deploy
+[info] [2024-12-12T12:38:13.766Z] : ℹ Building Application...
+[info] [2024-12-12T12:38:14.951Z] : [Angular-plugin]: Option "deployUrl" is deprecated: Use "baseHref" option, "APP_BASE_HREF" DI token or a combination of both instead. For more information, see https://angular.io/guide/deployment#the-deploy-url.
+[info] [2024-12-12T12:38:29.823Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files           | Names         |  Raw Size | Estimated Transfer Size
+[Angular-plugin]: main.604f58743b9d2b7f.js      | main          | 900.72 kB |               214.11 kB
+[Angular-plugin]: polyfills.1b45c5e4654f87b1.js | polyfills     |  33.12 kB |                10.68 kB
+[Angular-plugin]: runtime.ed306121151239ee.js   | runtime       |   3.14 kB |                 1.46 kB
+[Angular-plugin]: styles.ef46db3751d8e999.css   | styles        |   0 bytes |                       -
+[Angular-plugin]: 
+[Angular-plugin]:                               | Initial Total | 936.98 kB |               226.25 kB
+[Angular-plugin]: 
+[Angular-plugin]: Lazy Chunk Files              | Names         |  Raw Size | Estimated Transfer Size
+[Angular-plugin]: 92.bd93c65aa62c06b5.js        | canvg         | 152.71 kB |                43.32 kB
+[Angular-plugin]: 735.2e62527603ae9095.js       | dompurify     |  21.30 kB |                 7.53 kB
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-12-12T12:38:29.819Z - Hash: ce5a31f14e99eb56 - Time: 13887ms
+[info] [2024-12-12T12:38:29.826Z] : [Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.index-of.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.iterator.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.reduce.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.reverse.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.promise.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.regexp.to-string.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index
+[info] [2024-12-12T12:38:29.828Z] : [Angular-plugin]: .es.js depends on 'core-js/modules/es.string.ends-with.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.includes.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.match.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.replace.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.split.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.starts-with.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.trim.js'. CommonJS or AMD dependencies can cause optimiz
+[info] [2024-12-12T12:38:29.830Z] : [Angular-plugin]: ation bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/web.dom-collections.iterator.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'raf'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'rgbcolor'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\src\app\app.component.ts depends on 'html2pdf.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: 
+[debug] [2024-12-12T12:38:30.245Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/project/3672000001499020/webapp 
+
+[debug] [2024-12-12T12:38:46.127Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 12 Dec 2024 12:39:13 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=4ead9897700827f973c0f7dbded7f673; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=33e14a3d-f418-4e91-a30e-e36cded47f62;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=33e14a3d-f418-4e91-a30e-e36cded47f62;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2024-12-12T12:38:46.130Z] : 
+[info] [2024-12-12T12:38:46.131Z] : ✔ client: deploy successful
+[info] [2024-12-12T12:38:46.132Z] : ℹ client: URL => https://hojokin-poc-731666484.development.catalystserverless.com/app/index.html
+[info] [2024-12-12T12:38:46.132Z] : 
+[info] [2024-12-12T12:38:46.132Z] : ✔ Catalyst deploy complete!
+[debug] [2024-12-12T12:38:46.133Z] : NO ERRORS REGISTERED
+[debug] [2024-12-12T12:38:46.134Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2024-12-12T12:38:46.134Z] : TOTAL DURATION OF COMMAND EXEC : 33650
+[debug] [2024-12-12T12:38:46.196Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2024-12-12T12:39:08.274Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Thu, 12 Dec 2024 12:39:35 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"141","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly","JSESSIONID=E8B5AF4293F1AC240E0800D111CF4A79; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-12T12:39:08.275Z] : Response Body : {"status":"failure","data":{"error_code":"MORE_THAN_MAX_LENGTH","message":"Please check if the length of the input is in the correct range"}}
+
+[debug] [2024-12-12T12:39:08.276Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the length of the input is in the correct range
+[debug] [2024-12-12T12:50:55.679Z] : 
+[debug] [2024-12-12T12:50:55.681Z] : ----------------------------------------------------------------------
+[debug] [2024-12-12T12:50:55.681Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js deploy --only client
+[debug] [2024-12-12T12:50:55.682Z] : CLI Version:  1.17.5
+[debug] [2024-12-12T12:50:55.682Z] : Platform:     win32
+[debug] [2024-12-12T12:50:55.682Z] : Node Version: v20.12.2
+[debug] [2024-12-12T12:50:55.682Z] : Time:         Thu Dec 12 2024 20:50:55 GMT+0800 (Philippine Standard Time)
+[debug] [2024-12-12T12:50:55.683Z] : ----------------------------------------------------------------------
+[debug] [2024-12-12T12:50:55.683Z] : 
+[debug] [2024-12-12T12:50:56.264Z] : > authorizing via signed-in user option
+[debug] [2024-12-12T12:50:56.264Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL","ZohoCatalyst.appsail.Update"]
+[debug] [2024-12-12T12:50:56.277Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/3672000001499020 
+
+[debug] [2024-12-12T12:50:57.246Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 12 Dec 2024 12:51:24 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=feb776ff-bafd-48a5-be64-e787a72c2769;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=feb776ff-bafd-48a5-be64-e787a72c2769;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-12T12:50:57.250Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/3672000001499020/environment 
+
+[debug] [2024-12-12T12:50:57.538Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 12 Dec 2024 12:51:25 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=3b452ace-20ae-4870-bdf2-c908eca5cf68;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=3b452ace-20ae-4870-bdf2-c908eca5cf68;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2024-12-12T12:50:57.749Z] : ℹ Plugin : "zcatalyst-cli-plugin-angular" is used for client deploy
+[info] [2024-12-12T12:50:57.749Z] : ℹ Building Application...
+[info] [2024-12-12T12:50:59.003Z] : [Angular-plugin]: Option "deployUrl" is deprecated: Use "baseHref" option, "APP_BASE_HREF" DI token or a combination of both instead. For more information, see https://angular.io/guide/deployment#the-deploy-url.
+[info] [2024-12-12T12:51:14.799Z] : [Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.index-of.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.iterator.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.reduce.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.reverse.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.promise.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.regexp.to-string.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index
+[info] [2024-12-12T12:51:14.836Z] : [Angular-plugin]: .es.js depends on 'core-js/modules/es.string.ends-with.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.includes.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.match.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.replace.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.split.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.starts-with.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.trim.js'. CommonJS or AMD dependencies can cause optimiz
+[info] [2024-12-12T12:51:14.854Z] : [Angular-plugin]: ation bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/web.dom-collections.iterator.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'raf'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'rgbcolor'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\src\app\app.component.ts depends on 'html2pdf.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: 
+[info] [2024-12-12T12:51:14.897Z] : [Angular-plugin]: 
+[Angular-plugin]: Error: src/app/app.component.html:24:62 - error TS2339: Property 'title' does not exist on type 'AppComponent'.[Angular-plugin]: 
+[Angular-plugin]: [Angular-plugin]: 
+[Angular-plugin]: 24         <b><p style="font-size: 20px;">{{ day }}<span *ngIf="title !== ''"> - {{ title }} </span>Day {{ day.dayNumber }}</p></b>[Angular-plugin]: 
+[Angular-plugin]:                                                                 ~~~~~[Angular-plugin]: 
+[Angular-plugin]: [Angular-plugin]: 
+[Angular-plugin]:   src/app/app.component.ts:9:16[Angular-plugin]: 
+[Angular-plugin]:     9   templateUrl: './app.component.html',[Angular-plugin]: 
+[Angular-plugin]:                      ~~~~~~~~~~~~~~~~~~~~~~[Angular-plugin]: 
+[Angular-plugin]:     Error occurs in the template of component AppComponent.[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/app.component.html:24:82 - error TS2339: Property 'title' does not exist on type 'AppComponent'.[Angular-plugin]: 
+[Angular-plugin]: [Angular-plugin]: 
+[Angular-plugin]: 24         <b><p style="font-size: 20px;">{{ day }}<span *ngIf="title !== ''"> - {{ title }} </span>Day {{ day.dayNumber }}</p></b>[Angular-plugin]: 
+[Angular-plugin]:                                                                                     ~~~~~[Angular-plugin]: 
+[Angular-plugin]: [Angular-plugin]: 
+[Angular-plugin]:   src/app/app.component.ts:9:16[Angular-plugin]: 
+[Angular-plugin]:     9   templateUrl: './app.component.html',[Angular-plugin]: 
+[Angular-plugin]:                      ~~~~~~~~~~~~~~~~~~~~~~[Angular-plugin]: 
+[Angular-plugin]:     Error occurs in the template of component AppComponent.[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[debug] [2024-12-12T12:51:14.927Z] : client deploy unsuccessful, reason : CatalystError: Malformed error
+    at CatalystError.getErrorInstance (C:\Users\Admin\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\error.js:49:26)
+    at C:\Users\Admin\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\client-utils.js:154:45
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\Admin\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\client-utils.js:6:65)
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at process.processImmediate (node:internal/timers:449:9)
+[warn] [2024-12-12T12:51:14.929Z] : ⚠ client: Malformed error
+[info] [2024-12-12T12:51:14.930Z] : 
+[error] [2024-12-12T12:51:14.931Z] : ✖ client: deploy skipped
+[info] [2024-12-12T12:51:14.936Z] : 
+[error] [2024-12-12T12:51:14.938Z] : ✖ No components deployed!
+[error] [2024-12-12T12:51:14.949Z] : ✖ Malformed error
+[debug] [2024-12-12T12:51:14.954Z] : Error Stack: CatalystError: Malformed error
+    at CatalystError.getErrorInstance (C:\Users\Admin\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\error.js:49:26)
+    at C:\Users\Admin\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\client-utils.js:154:45
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\Admin\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\client-utils.js:6:65)
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at process.processImmediate (node:internal/timers:449:9)
+[debug] [2024-12-12T12:51:14.954Z] : Original Error: undefined
+[debug] [2024-12-12T12:51:14.954Z] : Error Status: 500
+[debug] [2024-12-12T12:51:14.956Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2024-12-12T12:51:14.960Z] : TOTAL DURATION OF COMMAND EXEC : 18685
+[debug] [2024-12-12T12:51:15.182Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2024-12-12T12:51:39.609Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Thu, 12 Dec 2024 12:52:07 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"141","connection":"keep-alive","set-cookie":["zalb_46512fd555=4ead9897700827f973c0f7dbded7f673; Path=/; Secure; HttpOnly","JSESSIONID=F94968611AF6410DC47275BE0D305237; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-12T12:51:39.612Z] : Response Body : {"status":"failure","data":{"error_code":"MORE_THAN_MAX_LENGTH","message":"Please check if the length of the input is in the correct range"}}
+
+[debug] [2024-12-12T12:51:39.614Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the length of the input is in the correct range
+[debug] [2024-12-12T12:54:18.427Z] : 
+[debug] [2024-12-12T12:54:18.428Z] : ----------------------------------------------------------------------
+[debug] [2024-12-12T12:54:18.429Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js deploy --only client
+[debug] [2024-12-12T12:54:18.429Z] : CLI Version:  1.17.5
+[debug] [2024-12-12T12:54:18.429Z] : Platform:     win32
+[debug] [2024-12-12T12:54:18.430Z] : Node Version: v20.12.2
+[debug] [2024-12-12T12:54:18.430Z] : Time:         Thu Dec 12 2024 20:54:18 GMT+0800 (Philippine Standard Time)
+[debug] [2024-12-12T12:54:18.430Z] : ----------------------------------------------------------------------
+[debug] [2024-12-12T12:54:18.430Z] : 
+[debug] [2024-12-12T12:54:19.002Z] : > authorizing via signed-in user option
+[debug] [2024-12-12T12:54:19.003Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL","ZohoCatalyst.appsail.Update"]
+[debug] [2024-12-12T12:54:19.015Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/3672000001499020 
+
+[debug] [2024-12-12T12:54:19.764Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 12 Dec 2024 12:54:47 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=4ead9897700827f973c0f7dbded7f673; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=b8e94a5e-4181-4c4f-993b-565116a6ae86;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b8e94a5e-4181-4c4f-993b-565116a6ae86;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-12T12:54:19.770Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/3672000001499020/environment 
+
+[debug] [2024-12-12T12:54:20.209Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 12 Dec 2024 12:54:47 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=84aec0da-f72e-44f6-851f-0bd9bb50d2f9;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=84aec0da-f72e-44f6-851f-0bd9bb50d2f9;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2024-12-12T12:54:20.420Z] : ℹ Plugin : "zcatalyst-cli-plugin-angular" is used for client deploy
+[info] [2024-12-12T12:54:20.420Z] : ℹ Building Application...
+[info] [2024-12-12T12:54:21.623Z] : [Angular-plugin]: Option "deployUrl" is deprecated: Use "baseHref" option, "APP_BASE_HREF" DI token or a combination of both instead. For more information, see https://angular.io/guide/deployment#the-deploy-url.
+[info] [2024-12-12T12:54:35.944Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files           | Names         |  Raw Size | Estimated Transfer Size
+[Angular-plugin]: main.49721bad56e1a852.js      | main          | 900.73 kB |               214.01 kB
+[Angular-plugin]: polyfills.1b45c5e4654f87b1.js | polyfills     |  33.12 kB |                10.68 kB
+[Angular-plugin]: runtime.ed306121151239ee.js   | runtime       |   3.14 kB |                 1.46 kB
+[Angular-plugin]: styles.ef46db3751d8e999.css   | styles        |   0 bytes |                       -
+[Angular-plugin]: 
+[Angular-plugin]:                               | Initial Total | 936.99 kB |               226.15 kB
+[Angular-plugin]: 
+[Angular-plugin]: Lazy Chunk Files              | Names         |  Raw Size | Estimated Transfer Size
+[Angular-plugin]: 92.bd93c65aa62c06b5.js        | canvg         | 152.71 kB |                43.32 kB
+[Angular-plugin]: 735.2e62527603ae9095.js       | dompurify     |  21.30 kB |                 7.53 kB
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-12-12T12:54:35.939Z - Hash: 830c8563668c7ed9 - Time: 13320ms
+[info] [2024-12-12T12:54:35.946Z] : [Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.index-of.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.iterator.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.reduce.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.reverse.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.promise.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.regexp.to-string.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index
+[info] [2024-12-12T12:54:35.948Z] : [Angular-plugin]: .es.js depends on 'core-js/modules/es.string.ends-with.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.includes.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.match.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.replace.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.split.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.starts-with.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.trim.js'. CommonJS or AMD dependencies can cause optimiz
+[info] [2024-12-12T12:54:35.951Z] : [Angular-plugin]: ation bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/web.dom-collections.iterator.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'raf'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'rgbcolor'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\src\app\app.component.ts depends on 'html2pdf.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: 
+[debug] [2024-12-12T12:54:36.338Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/project/3672000001499020/webapp 
+
+[debug] [2024-12-12T12:54:59.724Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 12 Dec 2024 12:55:27 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=1a651523-0895-42e3-9b55-9d9ac8947fbd;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=1a651523-0895-42e3-9b55-9d9ac8947fbd;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2024-12-12T12:54:59.730Z] : 
+[info] [2024-12-12T12:54:59.731Z] : ✔ client: deploy successful
+[info] [2024-12-12T12:54:59.731Z] : ℹ client: URL => https://hojokin-poc-731666484.development.catalystserverless.com/app/index.html
+[info] [2024-12-12T12:54:59.732Z] : 
+[info] [2024-12-12T12:54:59.733Z] : ✔ Catalyst deploy complete!
+[debug] [2024-12-12T12:54:59.733Z] : NO ERRORS REGISTERED
+[debug] [2024-12-12T12:54:59.734Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2024-12-12T12:54:59.734Z] : TOTAL DURATION OF COMMAND EXEC : 40741
+[debug] [2024-12-12T12:54:59.793Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2024-12-12T12:55:10.684Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Thu, 12 Dec 2024 12:55:38 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"141","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly","JSESSIONID=37196DAD5B97B100172DCF25D0EF2BFC; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-12T12:55:10.685Z] : Response Body : {"status":"failure","data":{"error_code":"MORE_THAN_MAX_LENGTH","message":"Please check if the length of the input is in the correct range"}}
+
+[debug] [2024-12-12T12:55:10.687Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the length of the input is in the correct range
+[debug] [2024-12-12T12:59:53.290Z] : 
+[debug] [2024-12-12T12:59:53.292Z] : ----------------------------------------------------------------------
+[debug] [2024-12-12T12:59:53.292Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js deploy --only client
+[debug] [2024-12-12T12:59:53.292Z] : CLI Version:  1.17.5
+[debug] [2024-12-12T12:59:53.292Z] : Platform:     win32
+[debug] [2024-12-12T12:59:53.293Z] : Node Version: v20.12.2
+[debug] [2024-12-12T12:59:53.293Z] : Time:         Thu Dec 12 2024 20:59:53 GMT+0800 (Philippine Standard Time)
+[debug] [2024-12-12T12:59:53.293Z] : ----------------------------------------------------------------------
+[debug] [2024-12-12T12:59:53.293Z] : 
+[debug] [2024-12-12T12:59:53.877Z] : > authorizing via signed-in user option
+[debug] [2024-12-12T12:59:53.877Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL","ZohoCatalyst.appsail.Update"]
+[debug] [2024-12-12T12:59:53.889Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/3672000001499020 
+
+[debug] [2024-12-12T12:59:54.623Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 12 Dec 2024 13:00:22 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=458ad442-2fab-4272-9b91-024cf52793e8;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=458ad442-2fab-4272-9b91-024cf52793e8;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-12T12:59:54.627Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/3672000001499020/environment 
+
+[debug] [2024-12-12T12:59:54.915Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 12 Dec 2024 13:00:22 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=4ead9897700827f973c0f7dbded7f673; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=ff5668ed-5bc9-4fd0-8986-7c0f30fde9ed;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=ff5668ed-5bc9-4fd0-8986-7c0f30fde9ed;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2024-12-12T12:59:55.126Z] : ℹ Plugin : "zcatalyst-cli-plugin-angular" is used for client deploy
+[info] [2024-12-12T12:59:55.126Z] : ℹ Building Application...
+[info] [2024-12-12T12:59:56.304Z] : [Angular-plugin]: Option "deployUrl" is deprecated: Use "baseHref" option, "APP_BASE_HREF" DI token or a combination of both instead. For more information, see https://angular.io/guide/deployment#the-deploy-url.
+[info] [2024-12-12T13:00:11.460Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files           | Names         |  Raw Size | Estimated Transfer Size
+[Angular-plugin]: main.92e7c6100083d391.js      | main          | 900.73 kB |               214.18 kB
+[Angular-plugin]: polyfills.1b45c5e4654f87b1.js | polyfills     |  33.12 kB |                10.68 kB
+[Angular-plugin]: runtime.ed306121151239ee.js   | runtime       |   3.14 kB |                 1.46 kB
+[Angular-plugin]: styles.ef46db3751d8e999.css   | styles        |   0 bytes |                       -
+[Angular-plugin]: 
+[Angular-plugin]:                               | Initial Total | 936.99 kB |               226.32 kB
+[Angular-plugin]: 
+[Angular-plugin]: Lazy Chunk Files              | Names         |  Raw Size | Estimated Transfer Size
+[Angular-plugin]: 92.bd93c65aa62c06b5.js        | canvg         | 152.71 kB |                43.32 kB
+[Angular-plugin]: 735.2e62527603ae9095.js       | dompurify     |  21.30 kB |                 7.53 kB
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2024-12-12T13:00:11.455Z - Hash: e0ff9fdff161b539 - Time: 14190ms
+[info] [2024-12-12T13:00:11.463Z] : [Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.index-of.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.iterator.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.reduce.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.array.reverse.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.promise.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.regexp.to-string.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index
+[info] [2024-12-12T13:00:11.465Z] : [Angular-plugin]: .es.js depends on 'core-js/modules/es.string.ends-with.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.includes.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.match.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.replace.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.split.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.starts-with.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/es.string.trim.js'. CommonJS or AMD dependencies can cause optimiz
+[info] [2024-12-12T13:00:11.466Z] : [Angular-plugin]: ation bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'core-js/modules/web.dom-collections.iterator.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'raf'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\node_modules\canvg\lib\index.es.js depends on 'rgbcolor'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: Warning: D:\Zoho Catalyst Projects\WTJ Itinerary Document\client\src\app\app.component.ts depends on 'html2pdf.js'. CommonJS or AMD dependencies can cause optimization bailouts.
+[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+[Angular-plugin]: 
+[Angular-plugin]: 
+[debug] [2024-12-12T13:00:12.075Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/project/3672000001499020/webapp 
+
+[debug] [2024-12-12T13:00:30.385Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 12 Dec 2024 13:00:58 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=97185f2b-908e-45fa-9540-b4f82c0f5ecc;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=97185f2b-908e-45fa-9540-b4f82c0f5ecc;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2024-12-12T13:00:30.388Z] : 
+[info] [2024-12-12T13:00:30.389Z] : ✔ client: deploy successful
+[info] [2024-12-12T13:00:30.389Z] : ℹ client: URL => https://hojokin-poc-731666484.development.catalystserverless.com/app/index.html
+[info] [2024-12-12T13:00:30.390Z] : 
+[info] [2024-12-12T13:00:30.390Z] : ✔ Catalyst deploy complete!
+[debug] [2024-12-12T13:00:30.390Z] : NO ERRORS REGISTERED
+[debug] [2024-12-12T13:00:30.391Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2024-12-12T13:00:30.391Z] : TOTAL DURATION OF COMMAND EXEC : 36524
+[debug] [2024-12-12T13:00:30.451Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2024-12-12T13:00:50.875Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Thu, 12 Dec 2024 13:01:18 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"141","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly","JSESSIONID=CFDFC4BA34E3FBFF9B8259BCDC8D98CE; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-12T13:00:50.876Z] : Response Body : {"status":"failure","data":{"error_code":"MORE_THAN_MAX_LENGTH","message":"Please check if the length of the input is in the correct range"}}
+
+[debug] [2024-12-12T13:00:50.877Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the length of the input is in the correct range

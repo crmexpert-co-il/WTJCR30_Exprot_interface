@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "3672000001499020",
+      "name": "Hojokin-POC",
+      "domain": {
+        "id": "10089170146",
+        "name": "hojokin-poc-731666484.development"
+      },
+      "timezone": "Europe/Madrid",
+      "env": [
+        {
+          "idx": 1,
+          "id": "731666484",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}

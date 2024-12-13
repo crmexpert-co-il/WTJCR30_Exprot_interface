@@ -1,0 +1,12 @@
+{
+	"name": "wtj_itinerarydocument_function",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "marvin.gulle@crmexperts.co.il",
+	"dependencies": {
+		"axios": "^1.7.9",
+		"cors": "^2.8.5",
+		"express": "^4.21.2",
+		"zcatalyst-sdk-node": "latest"
+	}
+}

@@ -1,0 +1,37 @@
+[debug] [2024-12-09T05:55:40.441Z] : 
+[debug] [2024-12-09T05:55:40.443Z] : ----------------------------------------------------------------------
+[debug] [2024-12-09T05:55:40.443Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve --only functions
+[debug] [2024-12-09T05:55:40.443Z] : CLI Version:  1.17.5
+[debug] [2024-12-09T05:55:40.444Z] : Platform:     win32
+[debug] [2024-12-09T05:55:40.444Z] : Node Version: v20.12.2
+[debug] [2024-12-09T05:55:40.444Z] : Time:         Mon Dec 09 2024 13:55:40 GMT+0800 (Philippine Standard Time)
+[debug] [2024-12-09T05:55:40.445Z] : ----------------------------------------------------------------------
+[debug] [2024-12-09T05:55:40.445Z] : 
+[debug] [2024-12-09T05:55:41.088Z] : > authorizing via signed-in user option
+[debug] [2024-12-09T05:55:41.088Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute"]
+[debug] [2024-12-09T05:55:41.101Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/3672000001499020 
+
+[debug] [2024-12-09T05:55:43.707Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 09 Dec 2024 05:56:07 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=e64f8ed4-88be-41c9-91a3-f92a634d1c15;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=e64f8ed4-88be-41c9-91a3-f92a634d1c15;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-09T05:55:43.710Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/3672000001499020/environment 
+
+[debug] [2024-12-09T05:55:44.372Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 09 Dec 2024 05:56:07 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=b14009a6059feb83ee8aa1c715a015c5; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=6b6c0907-79da-4aab-ae7f-8b0455d791d9;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=6b6c0907-79da-4aab-ae7f-8b0455d791d9;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-09T05:55:44.519Z] : Build folder already exists, starting cleanup
+[info] [2024-12-09T05:55:44.527Z] : 
+[error] [2024-12-09T05:55:44.527Z] : ✖ Error: Error in running the pre cleanup process: unable to cleanup the .build directory.
+[debug] [2024-12-09T05:55:44.528Z] : Error Stack: CatalystError: Error running pre cleanup
+    at C:\Users\Admin\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\serve\index.js:66:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\Admin\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\serve\index.js:29:65)
+[debug] [2024-12-09T05:55:44.528Z] : Original Error: Error: EBUSY: resource busy or locked, rmdir 'D:\Zoho Catalyst Projects\WTJ Itinerary Document\.build\functions\wtj_itinerarydocument_function'
+[debug] [2024-12-09T05:55:44.528Z] : Error Status: 500
+[info] [2024-12-09T05:55:44.528Z] : 
+[error] [2024-12-09T05:55:44.529Z] : Please delete the D:\Zoho Catalyst Projects\WTJ Itinerary Document\.build directory, with administrator privilege if necessary.
+[debug] [2024-12-09T05:55:44.529Z] : EXEC ENDED with event: Error (User), message: Error running pre cleanup
+[debug] [2024-12-09T05:55:44.529Z] : TOTAL DURATION OF COMMAND EXEC : 3444
+[debug] [2024-12-09T05:55:44.568Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
